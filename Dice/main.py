@@ -51,7 +51,7 @@ dice_group.add(Dice(1))
 # Fill the screen with white
 screen.fill((255, 255, 255))
 
-while True:
+def main():
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -67,3 +67,8 @@ while True:
 
     pygame.display.update()
     pygame.time.Clock().tick(60)
+
+    
+if __name__ == "__main__" :
+    while True:
+        main()
